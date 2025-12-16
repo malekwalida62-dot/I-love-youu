@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Story</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- صفحة كلمة السر -->
+<div class="card" id="page1">
+  <h2>Enter Password</h2>
+  <input type="password" id="password" placeholder="Password">
+  <button onclick="login()">Enter</button>
+  <p id="error"></p>
+</div>
+
+<!-- صفحة ترحيب -->
+<div class="card hidden" id="page2">
+  <h1>حبيبة قلبيي</h1>
+  <p>
+    دي حاجة بسيطة بس معمولة ليكي  
+    خطوة خطوة هتعيشي ذكرياتنا 🤍
+  </p>
+  <button onclick="goTo(3)">Start Journey</button>
+</div>
+
+<!-- صفحة رسالة -->
+<div class="card hidden" id="page3">
+  <h1>انتي روحي وكتكوتي وبنتي</h1>
+  <p>
+    من أول يوم وإنتي مختلفة  
+    وجودك في حياتي أمان  
+    وضحكتك هي الراحة
+  </p>
+  <button onclick="goTo(4)">ذكرياتنا</button>
+</div>
+
+<!-- صفحة الصور -->
+<div class="card hidden big" id="page4">
+  <h1>صور بحبها</h1>
+
+  <div class="gallery">
+
+    <div class="photo">
+      <img src="https://i.postimg.cc/0QGfDr3h/IMG-20251216-111656.jpg">
+      <p>إيدك في إيدي 🤍</p>
+    </div>
+
+    <div class="photo">
+      <img src="https://i.postimg.cc/C53x0LMf/IMG-20251216-111706-1.jpg">
+      <p>خطواتنا مع بعض</p>
+    </div>
+
+    <div class="photo">
+      <img src="https://i.postimg.cc/yxZ7L4mt/IMG-20251216-111717-1.jpg">
+      <p>أحلى قعدة</p>
+    </div>
+
+  </div>
+
+  <button onclick="goTo(5)">كلام من قلبي</button>
+</div>
+
+<!-- صفحة كلام طويل -->
+<div class="card hidden" id="page5">
+  <h1>كلام من قلبي ي قلبي </h1>
+  <p>
+    أنا بحبك أكتر مما الكلام يشرح  
+    كل لحظة بينا ليها قيمة  
+    وكل يوم معاكي بحس إن الدنيا أهدى  
+    وجودك في حياتي نعمة كبيرة  
+    وأنا بحب  كل لحظة معاكي 
+  </p>
+  <button onclick="goTo(6)">النهاية</button>
+</div>
+
+<!-- صفحة النهاية -->
+<div class="card hidden" id="page6">
+  <h1>بحبك دايمًا ❤️</h1>
+  <p>
+    وهفضل أختارك  
+    كل مرة  
+    من غير تفكير
+  </p>
+  <button onclick="restart()">Restart</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
